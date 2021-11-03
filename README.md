@@ -20,8 +20,6 @@ In order to compile the PDF locally you need to have the following installed:
 - [pandoc](https://pandoc.org/)
 - [when-changed](https://pypi.org/project/when-changed/)
 
-The f
-
 ### Font
 
 In order to design your own
