@@ -89,7 +89,9 @@ The GitHub Action will run automatically everytime you push your changes to the 
 
 The API provides an easy access to the generated PDF File. You can use it to download the PDF File from your browser.
 
-The repository is setup in a way that the API can easly be deployed to a free hosting provider called [Vercel](https://vercel.com/).
+The repository is setup in a way that the API can easly be deployed to a free hosting provider called [Vercel](https://vercel.com/). Visit the Wiki page for more infos.
+
+[How to the Vercel API?](https://github.com/KuhlTime/hsd-markdown-thesis/wiki/Setup-Vercel)
 
 ## Cheat Sheet
 
