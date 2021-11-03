@@ -2,6 +2,8 @@
   <img src=".assets/banner-hsd-markdown-thesis.png" alt="Banner" max-height="160px">
 </p>
 
+> ⚠️😉 Don't be intimidated by the amount of files you only really need to care about the `contents/` folder!
+
 This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is setup for a german 🇩🇪 paper but can be easily adapted to other languages.
 
 **The example output can be viewed [here](https://hsd-markdown-thesis.vercel.app/output.pdf).**
