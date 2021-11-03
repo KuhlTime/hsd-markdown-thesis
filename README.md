@@ -22,7 +22,7 @@ In order to compile the PDF locally you need to have the following installed:
 
 ### Font
 
-In order to design your own
+In order to design your own cover you need to download the official LaTeX font from: https://sourceforge.net/projects/cm-unicode/
 
 ### VSCode
 
