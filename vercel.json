@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [
+    {
+      "src": "api/server.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/robots.txt",
+      "status": 204
+    },
+    {
+      "src": "/favicon.ico",
+      "status": 204
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/server.ts"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ dotenv.config()
 // If the env variables can not be found an error will be thrown
 const env = {
   PORT: (process.env.PORT || 8080) as number,
-  URL: (process.env.URL || '') as string,
+  URL: (process.env.URL || process.env.VERCEL_URL || '') as string,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN as string,
   GITHUB_USERNAME: process.env.GITHUB_USERNAME as string,
   GITHUB_REPOSITORY: process.env.GITHUB_REPOSITORY as string
