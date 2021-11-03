@@ -1,0 +1,23 @@
+# This Task should allways be faster than the actual build. 
+# If not run this task before the build workflow gets run.
+name: Delete Old Releases
+
+on:
+  push:
+    branches:
+      - main
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  Delete-Old-Releases:
+    runs-on: ubuntu-latest
+    steps:
+      - name: delete-older-releases
+        uses: dev-drprasad/delete-older-releases@v0.2.0
+        with:
+          keep_latest: 0
+          delete_tags: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

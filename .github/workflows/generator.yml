@@ -1,0 +1,60 @@
+name: PDF Generator
+
+on: push
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Concatenate Files
+        run: |
+          for f in content/*.md; do cat $f; echo; echo \\newpage; echo;  done > content.md
+
+      - name: Upload content.md Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: content.md
+          path: content.md
+
+      - name: Generate PDF
+        uses: docker://pandoc/latex:2.14.2
+        with:
+          args: -s -V papersize:a4 -V lang=de -V language=de-DE --number-sections content.md --resource-path content --citeproc --bibliography=bibliography.bib --csl=ieee.csl --pdf-engine=xelatex -o content.pdf
+
+      - name: Upload content.pdf Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: content.pdf
+          path: content.pdf
+
+      - name: Combine PDF
+        uses: docker://agflow/poppler:latest
+        with:
+          args: pdfunite static/beginning.pdf content.pdf output.pdf 
+
+      - name: Upload output.pdf Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: output.pdf
+          path: output.pdf
+
+      - name: Generate Tag Identifier
+        run: echo "TAG=v$(date +'%Y%m%d.%H%M%S')" >> $GITHUB_ENV
+
+      - name: Tag Commit
+        uses: anothrNick/github-tag-action@1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_TAG: ${{ env.TAG }}
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: ${{ env.TAG }}
+          body: ${{ github.head_commit.message }}
+          files: output.pdf
+          tag_name: ${{ env.TAG }}
+            
