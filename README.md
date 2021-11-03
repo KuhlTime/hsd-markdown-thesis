@@ -4,7 +4,7 @@
 
 This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is setup for a german 🇩🇪 paper but can be easily adapted to other languages.
 
-The Figma design for the cover (`static/beginning.pdf`) can be found here: https://www.figma.com/community/file/1037658856144320408/hsd-markdown-thesis
+**The example output can be viewed [here](https://hsd-markdown-thesis.vercel.app/output.pdf).**
 
 I have created this repo because I didn't want to have the complexity of a LaTeX project, but still use most of the features provided by the LaTeX language.
 
@@ -13,6 +13,8 @@ The project includes:
 - Scripts to run the compilation locally.
 - Support for BibTex.
 - An API to give access to the generated release over a static url.
+
+The Figma design for the cover (`static/beginning.pdf`) can be found here: https://www.figma.com/community/file/1037658856144320408/hsd-markdown-thesis
 
 ## Setup Local Environment
 
