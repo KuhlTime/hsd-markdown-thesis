@@ -91,7 +91,7 @@ The API provides an easy access to the generated PDF File. You can use it to dow
 
 The repository is setup in a way that the API can easly be deployed to a free hosting provider called [Vercel](https://vercel.com/). Visit the Wiki page for more infos.
 
-[How to the Vercel API?](https://github.com/KuhlTime/hsd-markdown-thesis/wiki/Setup-Vercel)
+[How to set up the Vercel API?](https://github.com/KuhlTime/hsd-markdown-thesis/wiki/Setup-Vercel)
 
 ## Cheat Sheet
 
