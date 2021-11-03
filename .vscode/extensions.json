@@ -3,6 +3,7 @@
     "cschleiden.vscode-github-actions",
     "notzaki.pandocciter",
     "yzhang.markdown-all-in-one",
-    "mathematic.vscode-pdf"
+    "mathematic.vscode-pdf",
+    "esbenp.prettier-vscode"
   ]
 }

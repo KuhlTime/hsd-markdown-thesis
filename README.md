@@ -85,6 +85,12 @@ All other files are **not vital** to be known of.
 ### GitHub Actions
 The GitHub Action will run automatically everytime you push your changes to the `main` branch. After a couple of minutes you will have a new release on your GitHub repository where you can download the generated PDF File.
 
+### API (Optional)
+
+The API provides an easy access to the generated PDF File. You can use it to download the PDF File from your browser.
+
+The repository is setup in a way that the API can easly be deployed to a free hosting provider called [Vercel](https://vercel.com/).
+
 ## Cheat Sheet
 
 Pandoc uses a more advanced form of markdown which allows for LaTeX statements to be directly included into your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).

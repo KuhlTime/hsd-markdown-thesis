@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "api"
+  ],
+  "ext": "ts,js,json",
+  "ignore": [
+    "node_modules",
+    "dist"
+  ],
+  "exec": "ts-node -r tsconfig-paths/register ./api/server.ts",
+  "restartable": "rs",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
