@@ -54,6 +54,18 @@ choco install pandoc pip
 pip install when-changed
 ```
 
+### Execution
+
+To execute the script you can use the following command:
+```sh
+./watch.sh
+```
+
+Or if you only want to run the generation once without listening for changes:
+```sh
+./generate.sh
+```
+
 ## Folder Structure
 
 - `content/`: The folder where all the **markdown files** and **assets** are stored. It is important that the markdown files are sorted in the same way you want them to appear inside the final PDF file. I suggest you to use a new file for each chapter.
