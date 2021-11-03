@@ -8,7 +8,6 @@ dotenv.config()
 // If the env variables can not be found an error will be thrown
 const env = {
   PORT: (process.env.PORT || 8080) as number,
-  URL: (process.env.URL || process.env.VERCEL_URL || '') as string,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN as string,
   GITHUB_USERNAME: process.env.GITHUB_USERNAME as string,
   GITHUB_REPOSITORY: process.env.GITHUB_REPOSITORY as string
@@ -19,12 +18,14 @@ const octokit = new Octokit({
 })
 
 app.get('/', (req, res) => {
+  const baseURL = req.protocol + '://' + req.get('host')
+
   res.send({
     message: 'API running nominal',
     author: env.GITHUB_USERNAME,
     links: {
-      output: `https://${env.URL}/output.pdf`,
-      shield: `https://${env.URL}/shield.svg`
+      output: `${baseURL}/output.pdf`,
+      shield: `${baseURL}/shield.svg`
     }
   })
 })
