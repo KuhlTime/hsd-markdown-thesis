@@ -23,8 +23,8 @@ app.get('/', (req, res) => {
     message: 'API running nominal',
     author: env.GITHUB_USERNAME,
     links: {
-      output: `${env.URL}/output.pdf`,
-      shield: `${env.URL}/shield.svg`
+      output: `https://${env.URL}/output.pdf`,
+      shield: `https://${env.URL}/shield.svg`
     }
   })
 })
