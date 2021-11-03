@@ -20,6 +20,8 @@ The Figma design for the cover (`static/beginning.pdf`) can be found here: https
 
 ## Setup Local Environment
 
+> 🥳 If you just want to use the GitHub Action there is **no need to install anything!**
+
 In order to compile the PDF locally you need to have the following installed:
 - [pandoc](https://pandoc.org/)
 - [when-changed](https://pypi.org/project/when-changed/)
