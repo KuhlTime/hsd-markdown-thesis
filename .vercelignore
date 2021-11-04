@@ -12,7 +12,6 @@ yarn-error.log
 static
 content
 .github
-.assets
 style.csl
 watch.sh
 generate.sh
