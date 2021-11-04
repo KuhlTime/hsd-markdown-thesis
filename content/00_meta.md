@@ -1,10 +1,10 @@
 ---
 link-citations: true
+lof: true
+lot: true
 ---
 
 \thispagestyle{empty}
-\listoffigures
-\listoftables
 \newpage
 
 \thispagestyle{empty}
