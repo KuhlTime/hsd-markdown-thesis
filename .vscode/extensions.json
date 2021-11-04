@@ -4,6 +4,8 @@
     "notzaki.pandocciter",
     "yzhang.markdown-all-in-one",
     "mathematic.vscode-pdf",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint"
   ]
 }
