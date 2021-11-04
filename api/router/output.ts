@@ -19,9 +19,9 @@ router.get('/', async (_req, res) => {
     const running = await isActionRunning(repo)
 
     if (running) {
-      res.sendFile(join(__dirname, '../../.assets/busy.pdf'))
+      res.sendFile(join(__dirname, '../assets/busy.pdf'))
     } else {
-      res.sendFile(join(__dirname, '../../.assets/error.pdf'))
+      res.sendFile(join(__dirname, '../assets/error.pdf'))
     }
 
     return
