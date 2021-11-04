@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-import octokit from '@/config/octokit'
-import RepoIdentifier from '@/model/RepoIdentifier'
+import octokit from '../config/octokit'
+import RepoIdentifier from '../model/RepoIdentifier'
 
 /**
  * Gets the latest release of a repository.

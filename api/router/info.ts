@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import repo from '@/config/repo'
-import getLatestWorkflowRun from '@/lib/getLatestWorkflowRun'
+import repo from '../config/repo'
+import getLatestWorkflowRun from '../lib/getLatestWorkflowRun'
 
 const router = Router()
 

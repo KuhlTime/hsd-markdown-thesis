@@ -1,6 +1,6 @@
-import app from '@/app'
-import env from '@/config/env'
-import router from '@/router'
+import app from './app'
+import env from './config/env'
+import router from './router'
 
 const port = env.PORT
 

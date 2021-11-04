@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-import octokit from '@/config/octokit'
-import RepoIdentifier from '@/model/RepoIdentifier'
+import RepoIdentifier from '../model/RepoIdentifier'
+import octokit from '../config/octokit'
 
 /**
  * Returns the latest workflow run for the given repo. If there has not been a workflow run yet,

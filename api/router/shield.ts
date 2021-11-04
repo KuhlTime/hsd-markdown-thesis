@@ -1,8 +1,8 @@
 import { Router } from 'express'
 import axios from 'axios'
-import isLastGenerationSuccessfull from '@/lib/isLastGenerationSuccessfull'
-import getLatestRelease from '@/lib/getLatestRelease'
-import repo from '@/config/repo'
+import isLastGenerationSuccessfull from '../lib/isLastGenerationSuccessfull'
+import getLatestRelease from '../lib/getLatestRelease'
+import repo from '../config/repo'
 
 const router = Router()
 

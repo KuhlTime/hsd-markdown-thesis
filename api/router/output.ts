@@ -1,11 +1,11 @@
 import { Router } from 'express'
 import axios from 'axios'
 import { join } from 'path'
-import repo from '@/config/repo'
-import env from '@/config/env'
-import isActionRunning from '@/lib/isActionRunning'
-import isLastGenerationSuccessfull from '@/lib/isLastGenerationSuccessfull'
-import getLatestRelease from '@/lib/getLatestRelease'
+import repo from '../config/repo'
+import env from '../config/env'
+import isActionRunning from '../lib/isActionRunning'
+import isLastGenerationSuccessfull from '../lib/isLastGenerationSuccessfull'
+import getLatestRelease from '../lib/getLatestRelease'
 
 const router = Router()
 

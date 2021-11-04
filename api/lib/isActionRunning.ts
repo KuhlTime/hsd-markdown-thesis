@@ -1,5 +1,5 @@
 import getLatestWorkflowRun from './getLatestWorkflowRun'
-import RepoIdentifier from '@/model/RepoIdentifier'
+import RepoIdentifier from '../model/RepoIdentifier'
 
 /**
  * Returns wether or not a workflow is currently running for a given repo.

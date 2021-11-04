@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
 import getLatestWorkflowRun from './getLatestWorkflowRun'
-import octokit from '@/config/octokit'
-import RepoIdentifier from '@/model/RepoIdentifier'
+import RepoIdentifier from '../model/RepoIdentifier'
 
 /**
  * Returns wether the last github action run was successful or not
