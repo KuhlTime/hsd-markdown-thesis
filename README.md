@@ -114,6 +114,7 @@ Pandoc uses a more advanced form of markdown which allows for LaTeX statements t
 ## More Ressources
 
 - [Hinweise zum wissenschaftlichen Arbeiten](https://soz-kult.hs-duesseldorf.de/studium/was/Documents/Hinweise%20zum%20wissenschaftlichen%20Arbeiten_September2020_Final.pdf): This is a good ressource on how to write good scientific papers. 🇩🇪 <img src="https://raw.githubusercontent.com/KuhlTime/KuhlTime/main/assets/hsd.svg" height="10px">
+- [Pandoc Markdown](https://www.flutterbys.com.au/stats/tut/tut17.3.html)
 
 ## Contributing / Questions
 
