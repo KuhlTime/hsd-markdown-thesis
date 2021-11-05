@@ -15,7 +15,7 @@ Dies ist ein kompilzierte Passage^[Jetzt ist es einleuchtend].
 
 ## Bild
 
-![Programmers Life](images/sample.png){ width=200px }
+![Programmers Life](images/sample.png){ width=140px }
 
 ## Tabelle
 
