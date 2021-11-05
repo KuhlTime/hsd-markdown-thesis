@@ -25,3 +25,11 @@ Dies ist ein kompilzierte Passage^[Jetzt ist es einleuchtend].
 | Minderheit |  $5\%$ |
 
 Table: Es ist die Mehrheit.
+
+## Code
+
+```javascript
+function saySomethingFunny() {
+  console.log("Sometimes I believe the compiler ignores all my comments")
+}
+```
