@@ -1,17 +1,15 @@
 import { Router } from 'express'
-import axios from 'axios'
 import { join } from 'path'
 import repo from '../config/repo'
 import env from '../config/env'
 import isActionRunning from '../lib/isActionRunning'
 import getLatestRelease from '../lib/getLatestRelease'
+import getAssetResponse from 'api/lib/getAssetResponse'
 
 const router = Router()
 
 router.get('/', async (_req, res) => {
   const latestRelease = await getLatestRelease(repo)
-
-  console.log(latestRelease)
 
   // In case there is no latest release the action is either still running
   // or there was an error during compilation.
@@ -32,29 +30,16 @@ router.get('/', async (_req, res) => {
   const assetId = assetInformation.id
   const releaseTag = latestRelease.name?.replace('.', '_')
 
-  axios
-    .get(
-      `https://api.github.com/repos/${repo.owner}/${repo.repo}/releases/assets/${assetId}`,
-      {
-        responseType: 'stream',
-        headers: {
-          Accept: 'application/octet-stream',
-          Authorization: `Bearer ${env.GITHUB_TOKEN}`
-        }
-      }
+  const response = await getAssetResponse(repo, assetId)
+
+  if (response) {
+    res.setHeader('Content-Type', 'application/pdf')
+    res.setHeader(
+      'Content-Disposition',
+      `attachment; filename=${releaseTag}.pdf`
     )
-    .then(response => {
-      res.setHeader('Content-Type', 'application/pdf')
-      res.setHeader(
-        'Content-Disposition',
-        `attachment; filename=${releaseTag}.pdf`
-      )
-      response.data.pipe(res)
-    })
-    .catch(error => {
-      console.error(error)
-      res.send('Error')
-    })
+    response.data.pipe(res)
+  }
 })
 
 export default router

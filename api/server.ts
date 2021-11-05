@@ -1,3 +1,5 @@
+// Sloppy API Server 😅
+
 import app from './app'
 import env from './config/env'
 import router from './router'
