@@ -6,6 +6,7 @@
     "mathematic.vscode-pdf",
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.wordcount"
   ]
 }
