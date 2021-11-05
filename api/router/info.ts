@@ -2,7 +2,7 @@ import { Router } from 'express'
 import repo from '../config/repo'
 import getLatestWorkflowRun from '../lib/getLatestWorkflowRun'
 import getLatestRelease from '../lib/getLatestRelease'
-import getWordCount from 'api/lib/getWordCount'
+import getWordCount from '../lib/getWordCount'
 
 const router = Router()
 
