@@ -38,7 +38,7 @@ jobs:
       - name: Combine PDF
         uses: docker://agflow/poppler:latest
         with:
-          args: pdfunite static/beginning.pdf content.pdf output.pdf
+          args: pdfunite static/beginning.pdf content.pdf static/end.pdf output.pdf
 
       - name: Upload output.pdf Artifact
         uses: actions/upload-artifact@master
