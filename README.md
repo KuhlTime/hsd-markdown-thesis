@@ -16,7 +16,11 @@ The project includes:
 - Support for BibTex.
 - An API to give access to the generated release over a static url.
 
-The Figma design for the cover (`static/beginning.pdf`) can be found here: https://www.figma.com/community/file/1037658856144320408/hsd-markdown-thesis
+The Figma design for the cover (`static/beginning.pdf`) can be found here:<br>
+https://www.figma.com/community/file/1037658856144320408/hsd-markdown-thesis
+
+In case you are interested in a LaTeX Template visit ✌️:<br>
+https://github.com/TimB87/HSD-LaTeX-Template
 
 ## Folder Structure
 
