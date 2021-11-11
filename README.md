@@ -27,7 +27,8 @@ https://github.com/TimB87/HSD-LaTeX-Template
 - `content/`: The folder where all the **markdown files** and **assets** are stored. It is important that the markdown files are sorted in the same way you want them to appear inside the final PDF file. I suggest you to use a new file for each chapter.
   - `00_meta.md`: This file contains some basic metadata as well as the location of the table of contents, the list of figures and the list of tables.
 - `static/`: This directory contains all PDF files that should be added as they are. I have added a basic example PDF File to be used for the HSD.
-  - `beginning.pdf`: This file gets prepended to the final PDF. 
+  - `beginning.pdf`: This file gets prepended to the final PDF.
+  - `end.pdf`: The file gets appended to the final PDF.
 - `generate.sh`: Script to generate the PDF.
 - `watch.sh`: Script that watches the content folder for changes and automatically generates the PDF on any change.
 - `content.pdf`: The generated PDF content. The full document is currently only available through GitHub.
