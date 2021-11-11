@@ -36,7 +36,7 @@ router.get('/', async (_req, res) => {
     res.setHeader('Content-Type', 'application/pdf')
     res.setHeader(
       'Content-Disposition',
-      `attachment; filename=${releaseTag}.pdf`
+      `inline; filename=${releaseTag}.pdf`
     )
     response.data.pipe(res)
   }
