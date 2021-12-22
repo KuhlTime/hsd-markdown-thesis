@@ -6,6 +6,10 @@
 
 This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is setup for a german 🇩🇪 paper but can be easily adapted to other languages.
 
+<p align="center">
+  <img src=".assets/thesis-preview.png" alt="Preview" max-height="160px">
+</p>
+
 **The example output can be viewed [here](https://hsd-markdown-thesis.vercel.app/output.pdf).**
 
 I have created this repo because I didn't want to have the complexity of a LaTeX project, but still use most of the features provided by the LaTeX language.
