@@ -7,7 +7,9 @@
 This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is setup for a german 🇩🇪 paper but can be easily adapted to other languages.
 
 <p align="center">
-  <img src=".assets/thesis-preview.png" alt="Preview" max-height="160px">
+  <a href="https://hsd-markdown-thesis.vercel.app/output.pdf" target="_blank">
+    <img src=".assets/thesis-preview.png" alt="Preview" max-height="160px">
+  </a>
 </p>
 
 **The example output can be viewed [here](https://hsd-markdown-thesis.vercel.app/output.pdf).**
