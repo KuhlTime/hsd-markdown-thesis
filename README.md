@@ -2,9 +2,9 @@
   <img src=".assets/banner-hsd-markdown-thesis.png" alt="Banner" max-height="160px">
 </p>
 
-> ⚠️😉 Don't be intimidated by the amount of files you only really need to care about the `contents/` folder!
+> ⚠️😉 Don't be intimidated by the number of files you only really need to care about the `contents/` folder!
 
-This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is setup for a german 🇩🇪 paper but can be easily adapted to other languages.
+This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is set up for a german 🇩🇪 paper but can be easily adapted to other languages.
 
 <p align="center">
   <a href="https://hsd-markdown-thesis.vercel.app/output.pdf" target="_blank">
@@ -17,7 +17,7 @@ This template repository should get you quickly up and running with your thesis.
 I have created this repo because I didn't want to have the complexity of a LaTeX project, but still use most of the features provided by the LaTeX language.
 
 The project includes:
-- A GitHub Action that automatically generates a new PDF release everytime you push to the `main` branch of this repository.
+- A GitHub Action that automatically generates a new PDF release every time you push to the `main` branch of this repository.
 - Scripts to run the compilation locally.
 - Support for BibTex.
 - An API to give access to the generated release over a static url.
@@ -39,7 +39,7 @@ https://github.com/TimB87/HSD-LaTeX-Template
 - `watch.sh`: Script that watches the content folder for changes and automatically generates the PDF on any change.
 - `content.pdf`: The generated PDF content. The full document is currently only available through GitHub.
 - `style.csl`: The citation style used for the PDF. I used a modified version of the IEEE standard 🇩🇪. [CSL](https://citationstyles.org/), [CSL Library - GitHub](https://github.com/citation-style-language/styles)
-- `bibliography.bib`: This is the BibTex file that holds information about your citations. You can use any BibTex editor you want to generate this file. I have been using [MyBib](https://mybib.com/), which is a easy and beautifully designed web tool. (I am hopping for an API to make the PDF generation even easier.)
+- `bibliography.bib`: This is the BibTex file that holds information about your citations. You can use any BibTex editor you want to generate this file. I have been using [MyBib](https://mybib.com/), which is an easy and beautifully designed web tool. (I am hoping for an API to make the PDF generation even easier.)
 
 All other files are **not vital** to be known of. 
 
@@ -53,7 +53,7 @@ In order to compile the PDF locally you need to have the following installed:
 
 ### Font
 
-In order to design your own cover you need to download the official LaTeX font from: https://sourceforge.net/projects/cm-unicode/
+In order to design your own cover, you need to download the official LaTeX font from: https://sourceforge.net/projects/cm-unicode/
 
 ### VSCode
 
@@ -100,27 +100,27 @@ Or if you only want to run the generation once without listening for changes:
 ## Deployment
 
 ### GitHub Actions
-The GitHub Action will run automatically everytime you push your changes to the `main` branch. After a couple of minutes you will have a new release on your GitHub repository where you can download the generated PDF File.
+The GitHub Action will run automatically every time you push your changes to the `main` branch. After a couple of minutes, you will have a new release on your GitHub repository where you can download the generated PDF File.
 
 ### API (Optional)
 
-The API provides an easy access to the generated PDF File. You can use it to download the PDF File from your browser.
+The API provides easy access to the generated PDF File. You can use it to download the PDF File from your browser.
 
-The repository is setup in a way that the API can easly be deployed to a free hosting provider called [Vercel](https://vercel.com/). Visit the Wiki page for more infos.
+The repository is set up in a way that the API can easily be deployed to a free hosting provider called [Vercel](https://vercel.com/). Visit the Wiki page for more information.
 
 [How to set up the Vercel API?](https://github.com/KuhlTime/hsd-markdown-thesis/wiki/Setup-Vercel)
 
 ## Cheat Sheet
 
-Pandoc uses a more advanced form of markdown which allows for LaTeX statements to be directly included into your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+Pandoc uses a more advanced form of markdown which allows for LaTeX statements to be directly included in your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
 | Command                | Function                                                                                                     |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `\tableofcontents`     | Generates the table of contents based on the markdown headers you have defined.                              |
 | `\listoftables`        | Creates a list of all tables and their location inside your work.                                            |
 | `\listoffigures`       | Creates a list of all figures used inside your thesis.                                                       |
-| `\setcounter{page}{1}` | When using this statement the pagecounter gets reset and changes all following page number.                  |
-| `$<Expression>$`       | If you want to write a math expression use two `$` to denote the section where you expression is written in. |
+| `\setcounter{page}{1}` | When using this statement the page counter gets reset and changes all following page numbers.                  |
+| `$<Expression>$`       | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
 
 ## More Ressources
 
