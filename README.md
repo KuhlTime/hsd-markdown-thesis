@@ -2,6 +2,8 @@
   <img src=".assets/banner-hsd-markdown-thesis.png" alt="Banner" max-height="160px">
 </p>
 
+Use the <a href="https://github.com/KuhlTime/hsd-markdown-thesis/generate"><img height="24px" src=".assets/use-this-template.png"></a> Button to get started with your thesis.
+
 > ⚠️😉 Don't be intimidated by the number of files you only really need to care about the `contents/` folder!
 
 This template repository should get you quickly up and running with your thesis. It uses [pandoc](https://pandoc.org/) to compile all markdown files into a single PDF. The template is set up for a german 🇩🇪 paper but can be easily adapted to other languages.
@@ -114,12 +116,12 @@ The repository is set up in a way that the API can easily be deployed to a free 
 
 Pandoc uses a more advanced form of markdown which allows for LaTeX statements to be directly included in your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
-| Command                | Function                                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `\tableofcontents`     | Generates the table of contents based on the markdown headers you have defined.                              |
-| `\listoftables`        | Creates a list of all tables and their location inside your work.                                            |
-| `\listoffigures`       | Creates a list of all figures used inside your thesis.                                                       |
-| `\setcounter{page}{1}` | When using this statement the page counter gets reset and changes all following page numbers.                  |
+| Command                | Function                                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `\tableofcontents`     | Generates the table of contents based on the markdown headers you have defined.                               |
+| `\listoftables`        | Creates a list of all tables and their location inside your work.                                             |
+| `\listoffigures`       | Creates a list of all figures used inside your thesis.                                                        |
+| `\setcounter{page}{1}` | When using this statement the page counter gets reset and changes all following page numbers.                 |
 | `$<Expression>$`       | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
 
 ## More Ressources
