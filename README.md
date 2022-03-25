@@ -43,7 +43,11 @@ https://github.com/TimB87/HSD-LaTeX-Template
 - `style.csl`: The citation style used for the PDF. I used a modified version of the IEEE standard 🇩🇪. [CSL](https://citationstyles.org/), [CSL Library - GitHub](https://github.com/citation-style-language/styles)
 - `bibliography.bib`: This is the BibTex file that holds information about your citations. You can use any BibTex editor you want to generate this file. I have been using [MyBib](https://mybib.com/), which is an easy and beautifully designed web tool. (I am hoping for an API to make the PDF generation even easier.)
 
-All other files are **not vital** to be known of. 
+All other files are **not vital** to be known of.
+
+## Edit on Gitpod
+
+Once you created a copy from this template, you can head to [gitpod.io](https://gitpod.io) and create a workspace. All the required steps will be taken for you, and you will be presented with a fresh environment where you can immediately start being productive. All you have to do is to open and drag the `content.pdf` file into a new split pane.
 
 ## Setup Local Environment
 
