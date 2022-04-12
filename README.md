@@ -31,6 +31,8 @@ In case you are interested in a LaTeX Template visit ✌️:<br>
 https://github.com/TimB87/HSD-LaTeX-Template
 
 ## Folder Structure
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKuhlTime%2Fhsd-markdown-thesis.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FKuhlTime%2Fhsd-markdown-thesis?ref=badge_shield)
+
 
 - `content/`: The folder where all the **markdown files** and **assets** are stored. It is important that the markdown files are sorted in the same way you want them to appear inside the final PDF file. I suggest you to use a new file for each chapter.
   - `00_meta.md`: This file contains some basic metadata as well as the location of the table of contents, the list of figures and the list of tables.
@@ -136,3 +138,7 @@ Pandoc uses a more advanced form of markdown which allows for LaTeX statements t
 ## Contributing / Questions
 
 I am happy to accept any contribution. If you have any questions or suggestions feel free to open up a new issue. [New Issue](https://github.com/KuhlTime/hsd-markdown-thesis/issues/new)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKuhlTime%2Fhsd-markdown-thesis.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FKuhlTime%2Fhsd-markdown-thesis?ref=badge_large)
