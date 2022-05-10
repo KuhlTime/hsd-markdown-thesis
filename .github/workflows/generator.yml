@@ -1,5 +1,8 @@
 name: PDF Generator
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
