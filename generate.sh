@@ -5,5 +5,5 @@
 #  -H 'Cookie: <YOUR-COOKIE>' -o bibliography.bib
 
 for f in content/*.md; do cat $f; echo "\n\\\newpage\n"; done > content.md
-pandoc -s -V papersize:a4 --highlight-style my-one-light.theme --number-sections content.md --resource-path content --citeproc --bibliography=bibliography.bib --csl=style.csl --pdf-engine=xelatex -o content.pdf
+pandoc -s -V papersize:a4 --highlight-style my-one-light.theme --number-sections content.md --resource-path content --citeproc --bibliography=bibliography.bib -M reference-section-title=Referenzen --csl=style.csl --pdf-engine=xelatex --lua-filter pandoc-gls/pandoc-gls.lua -o content.pdf
 echo "✅ Finished Compilation"

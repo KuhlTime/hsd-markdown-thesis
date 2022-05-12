@@ -42,6 +42,7 @@ https://github.com/TimB87/HSD-LaTeX-Template
 - `content.pdf`: The generated PDF content. The full document is currently only available through GitHub.
 - `style.csl`: The citation style used for the PDF. I used a modified version of the IEEE standard 🇩🇪. [CSL](https://citationstyles.org/), [CSL Library - GitHub](https://github.com/citation-style-language/styles)
 - `bibliography.bib`: This is the BibTex file that holds information about your citations. You can use any BibTex editor you want to generate this file. I have been using [MyBib](https://mybib.com/), which is an easy and beautifully designed web tool. (I am hoping for an API to make the PDF generation even easier.)
+- `glossary.tex`: Holds a list of acronyms and abbreviations you can use inside your markdown files. The Syntax for using one can be seen on the [official plugin page](https://github.com/tomncooper/pandoc-gls). `(+<IDENTIFIER>)`
 
 All other files are **not vital** to be known of.
 
@@ -136,3 +137,7 @@ Pandoc uses a more advanced form of markdown which allows for LaTeX statements t
 ## Contributing / Questions
 
 I am happy to accept any contribution. If you have any questions or suggestions feel free to open up a new issue. [New Issue](https://github.com/KuhlTime/hsd-markdown-thesis/issues/new)
+
+## Note of thanks 🫶
+
+Huge thanks to the [<img src="https://raw.githubusercontent.com/KuhlTime/KuhlTime/main/assets/hsd.svg" height="10px"> **ZWEK Schreibberatung**](https://zwek.hs-duesseldorf.de/schreibberatung) (Writing Advisory) for helping me write my thesis. If you are studying at the HSD give them a call.

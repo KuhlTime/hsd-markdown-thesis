@@ -1,8 +1,17 @@
 ---
-link-citations: true
-lof: true
-lot: true
+link-citations: false
 lang: de-DE
+header-includes:
+    - \usepackage{glossaries}
+    - \makenoidxglossaries
+    - \include{glossary}
+include-after:
+    - \newpage
+    - \listoffigures
+    - \newpage
+    - \listoftables
+    - \newpage
+    - \printnoidxglossary[sort=word]
 ---
 
 \thispagestyle{empty}
