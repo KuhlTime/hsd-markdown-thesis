@@ -7,6 +7,7 @@
     "esbenp.prettier-vscode",
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
-    "ms-vscode.wordcount"
+    "ms-vscode.wordcount",
+    "valentjn.vscode-ltex"
   ]
 }
