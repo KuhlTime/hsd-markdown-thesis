@@ -30,7 +30,7 @@ jobs:
           path: content.md
 
       - name: Generate PDF
-        uses: docker://pandoc/latex:2.17.1.1
+        uses: docker://ghcr.io/kuhltime/pandoc-glossaries:latest
         with:
           args: -s -V papersize:a4 --highlight-style my-one-light.theme --number-sections content.md --resource-path content --citeproc --bibliography=bibliography.bib -M reference-section-title=Referenzen --csl=style.csl --pdf-engine=xelatex --lua-filter pandoc-gls.lua -o content.pdf
 
