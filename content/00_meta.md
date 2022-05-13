@@ -1,5 +1,5 @@
 ---
-link-citations: false
+link-citations: true
 lang: de-DE
 header-includes:
     - \usepackage{glossaries}
