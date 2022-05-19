@@ -128,6 +128,7 @@ Pandoc uses a more advanced form of markdown which allows for LaTeX statements t
 | `\listoffigures`       | Creates a list of all figures used inside your thesis.                                                        |
 | `\setcounter{page}{1}` | When using this statement the page counter gets reset and changes all following page numbers.                 |
 | `$<Expression>$`       | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
+| `![Text](image.png)\`  | As discussed in #5 images might get displaced inside the text. In order to prevent this add a `\` to the end. |
 
 ## More Ressources
 
