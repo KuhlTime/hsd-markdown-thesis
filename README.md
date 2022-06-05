@@ -50,6 +50,18 @@ All other files are **not vital** to be known of.
 
 Once you created a copy from this template, you can head to [gitpod.io](https://gitpod.io) and create a workspace. All the required steps will be taken for you, and you will be presented with a fresh environment where you can immediately start being productive. All you have to do is to open and drag the `content.pdf` file into a new split pane.
 
+Should the required packages not be installed and there be an error during compilation run:
+
+```shell
+sudo apt update && wget https://github.com/jgm/pandoc/releases/download/2.17.1.1/pandoc-2.17.1.1-1-amd64.deb && sudo dpkg -i pandoc-2.17.1.1-1-amd64.deb && rm -rf pandoc-2.17.1.1-1-amd64.deb && sudo apt install texlive-xetex -y && pip3 install -r requirements.txt
+```
+
+followed by:
+
+```shell
+sh ./watch.sh
+```
+
 ## Setup Local Environment
 
 > 🥳 If you just want to use the GitHub Action there is **no need to install anything!**
