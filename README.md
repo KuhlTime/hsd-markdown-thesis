@@ -133,13 +133,16 @@ The repository is set up in a way that the API can easily be deployed to a free 
 
 Pandoc uses a more advanced form of markdown which allows for LaTeX statements to be directly included in your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
-| Command                | Function                                                                                                      |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `\tableofcontents`     | Generates the table of contents based on the markdown headers you have defined.                               |
-| `\listoftables`        | Creates a list of all tables and their location inside your work.                                             |
-| `\listoffigures`       | Creates a list of all figures used inside your thesis.                                                        |
-| `\setcounter{page}{1}` | When using this statement the page counter gets reset and changes all following page numbers.                 |
-| `$<Expression>$`       | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
+| Command                                    | Function                                                                                                      |
+|--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `\tableofcontents`                         | Generates the table of contents based on the markdown headers you have defined.                               |
+| `\listoftables`                            | Creates a list of all tables and their location inside your work.                                             |
+| `\listoffigures`                           | Creates a list of all figures used inside your thesis.                                                        |
+| `\setcounter{page}{1}`                     | When using this statement the page counter gets reset and changes all following page numbers.                 |
+| `$<Expression>$`                           | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
+| `(+ID)`                                    | Reference a Glossary entry                                                                                    |
+| `![Footnote](path/to/image.png){#fig:abc}` | Load an image and add define a reference id                                                                   |
+| `@fig:abc`                                 | Reference an image by its id                                                                                  |
 
 ## More Ressources
 
