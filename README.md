@@ -22,7 +22,7 @@ The project includes:
 - A GitHub Action that automatically generates a new PDF release every time you push to the `main` branch of this repository.
 - Scripts to run the compilation locally.
 - Support for BibTex.
-- An API to give access to the generated release over a static url.
+- An API to give access to the generated release over a static URL.
 
 The Figma design for the cover (`static/beginning.pdf`) can be found here:<br>
 https://www.figma.com/community/file/1037658856144320408/hsd-markdown-thesis
@@ -131,18 +131,18 @@ The repository is set up in a way that the API can easily be deployed to a free 
 
 ## Cheat Sheet
 
-Pandoc uses a more advanced form of markdown which allows for LaTeX statements to be directly included in your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+Pandoc uses a more advanced form of Markdown which allows for LaTeX statements to be directly included in your content. Some of the most useful expressions I have listed in the table below. If you are just looking for a standard markdown cheat sheet you can find it [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
 
-| Command                                    | Function                                                                                                      |
-|--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| `\tableofcontents`                         | Generates the table of contents based on the markdown headers you have defined.                               |
-| `\listoftables`                            | Creates a list of all tables and their location inside your work.                                             |
-| `\listoffigures`                           | Creates a list of all figures used inside your thesis.                                                        |
-| `\setcounter{page}{1}`                     | When using this statement the page counter gets reset and changes all following page numbers.                 |
-| `$<Expression>$`                           | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
-| `(+ID)`                                    | Reference a Glossary entry                                                                                    |
-| `![Footnote](path/to/image.png){#fig:abc}` | Load an image and add define a reference id                                                                   |
-| `@fig:abc`                                 | Reference an image by its id                                                                                  |
+| Command                                              | Function                                                                                                      |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `\tableofcontents`                                   | Generates the table of contents based on the markdown headers you have defined.                               |
+| `\listoftables`                                      | Creates a list of all tables and their location inside your work.                                             |
+| `\listoffigures`                                     | Creates a list of all figures used inside your thesis.                                                        |
+| `\setcounter{page}{1}`                               | When using this statement the page counter gets reset and changes all following page numbers.                 |
+| `$<Expression>$`                                     | If you want to write a math expression use two `$` to denote the section where your expression is written in. |
+| `(+ID)`                                              | Reference a Glossary entry                                                                                    |
+| `![Footnote](path/to/image.png){#fig:abc width=50%}` | Load an image and define a reference ID, set image width to 50% of the page width                             |
+| `@fig:abc`                                           | Reference an image by its ID                                                                                  |
 
 ## More Ressources
 
