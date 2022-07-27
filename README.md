@@ -1,3 +1,5 @@
+> 🛑 Carefull the format currently does not match the corporate design intended by the university. I will address this issue as soon as I have more information on that. ☺️ More on that see: [#20](https://github.com/KuhlTime/hsd-markdown-thesis/issues/20)
+
 <p align="center">
   <img src=".assets/banner-hsd-markdown-thesis.png" alt="Banner" max-height="160px">
 </p>
